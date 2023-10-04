@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Practica 9</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="contacto.html" tabindex="-1" aria-disabled="true">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <div class="container">
+            <h1>Ciber Seguridad</h1>
+            <p>
+              La ciberseguridad es un campo crucial en el mundo digital actual. 
+              Se centra en proteger sistemas informáticos, redes, datos y dispositivos 
+              contra amenazas cibernéticas y ataques maliciosos. 
+            </p>
+
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./img/1.png" class="d-block w-50 mx-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/2.jpg" class="d-block w-50 mx-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/3.png" class="d-block w-50 mx-auto" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <br><br>
+
+            <table class="table table-light">
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col">Aspecto</th>
+                    <th scope="col">Descripción</th>
+                    <th scope="col">Beneficios</th>
+                    <th scope="col">Desafíos</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Autenticación Multifactor (MFA):</th>
+                    <td> La autenticación multifactor (MFA) es un método de seguridad que requiere que los usuarios proporcionen múltiples formas de identificación antes de acceder a un sistema o servicio. Esto podría incluir algo que el usuario sabe (contraseña), algo que el usuario tiene (teléfono móvil) y algo que el usuario es (huella digital).</td>
+                    <td><b>Mayor seguridad:</b> MFA proporciona una capa adicional de protección, ya que incluso si un atacante obtiene la contraseña, necesitaría el segundo factor para acceder.
+                      <br><b>Reducción de riesgos:</b> Ayuda a mitigar el riesgo de acceso no autorizado y protege mejor los datos confidenciales.
+                      <br><b>Cumplimiento normativo:</b> MFA es un requisito en muchas regulaciones de seguridad de datos.</td>
+                    <td><b>Inconveniencia:</b> Algunos usuarios pueden encontrar el proceso de autenticación MFA engorroso.
+                      <br><b>Implementación compleja:</b> Configurar MFA puede ser complicado, especialmente a escala empresarial.
+                      <br><b>Posibilidad de bloqueo:</b> Si un usuario pierde su segundo factor o no lo tiene disponible, podría quedar bloqueado fuera del sistema.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Análisis de Comportamiento del Usuario (UBA):</th>
+                    <td>El análisis de comportamiento del usuario (UBA) es una técnica que evalúa el comportamiento normal de un usuario en un sistema y alerta sobre actividades anómalas.</td>
+                    <td><b>Detección temprana de amenazas:</b> UBA puede identificar actividades sospechosas antes de que causen un daño significativo.
+                      <br><b>Reducción de falsos positivos:</b> Al comparar el comportamiento actual con el histórico, UBA reduce la cantidad de alertas falsas.
+                      <br><b>Mayor visibilidad:</b> Proporciona una visión más completa del riesgo en tiempo real.</td>
+                    <td><b>Configuración adecuada:</b> Requiere una configuración cuidadosa y ajustes para evitar alertas innecesarias o pasar por alto amenazas.
+                     <br> <b>Privacidad:</b> Monitorear el comportamiento de los usuarios puede plantear preocupaciones de privacidad y ética.
+                      <br><b>Costos:</b> Implementar una solución UBA efectiva puede ser costoso.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Gestión de Identidad y Acceso (IAM):</th>
+                    <td>IAM se refiere a la administración de identidades digitales y el control de acceso a sistemas y datos. Esto implica la gestión de usuarios, roles, privilegios y autenticación.</td>
+                    <td><b>Control de acceso:</b> IAM garantiza que solo las personas autorizadas tengan acceso a recursos específicos.
+                      <br><b>Auditoría y cumplimiento:</b> Facilita el seguimiento de quién accede a qué y cuándo, lo que es crucial para el cumplimiento normativo.
+                      <br><b>Automatización:</b> IAM automatiza procesos como la asignación y revocación de privilegios, lo que mejora la eficiencia.</td>
+                    <td><b>Complejidad:</b> Configurar IAM en grandes organizaciones puede ser complejo y propenso a errores.
+                      <br><b>Amenazas internas:</b> IAM debe abordar amenazas internas, como empleados maliciosos o descuidados.
+                      <br><b>Integración de sistemas:</b> La integración de sistemas heredados puede ser complicada y costosa.</tr>
+                  </tr>
+                </tbody>
+              </table><br><br>
+
+              <h2><b>Algunos Datos interesantes sobre la Ciber Seguridad son:</b></h2>
+              <ol>
+                  <li><b>El costo global de los ciberataques:</b></li>
+                  <p>
+                    Según un informe del Foro Económico Mundial, se estima que los ciberataques podrían costarle al mundo más de 6 billones de dólares al año para 2021. Esto incluye los costos de recuperación, pérdida de datos y el impacto en la economía global.
+                  </p>
+                  <br>
+                  <li><b>La rapidez de los ataques de phishing:</b></li>
+                  <p>
+                    Los ataques de phishing suelen ser muy efectivos debido a su rapidez. Según el informe "2020 Data Breach Investigations Report" de Verizon, el 93% de los ataques de phishing ocurren en minutos después de que se envían los correos electrónicos maliciosos.
+                  </p>
+                  <br>
+                  <li><b>Vulnerabilidades de software desactualizado</b></li>
+                  <p>
+                    El software desactualizado es una de las principales puertas de entrada para los ciberataques. En 2020, el 43% de las brechas de seguridad estuvieron relacionadas con vulnerabilidades de software no parcheadas, según el informe "Cost of a Data Breach" de IBM.
+                  </p>
+                  <br>
+                  <li><b>Ataques dirigidos a dispositivos IoT:</b></li>
+                  <p>
+                    El número de dispositivos de Internet de las cosas (IoT) continúa creciendo, y los ciberdelincuentes están tomando ventaja de esto. Según Symantec, se detectaron más de 21 millones de ataques a dispositivos IoT en 2020, un aumento del 100% en comparación con el año anterior.
+                  </p>
+                  <br>
+                  <li><b>El "Factor Humano" en la ciberseguridad: </b></li>
+                  <p>
+                    A pesar de la tecnología avanzada, los errores humanos siguen siendo una de las principales amenazas en ciberseguridad. Un informe de IBM señala que aproximadamente el 95% de los incidentes de seguridad están relacionados con el error humano, como hacer clic en enlaces maliciosos o utilizar contraseñas débiles.
+                  </p>
+              </ol><br><br>
+              
+                <div class="row">
+                    <div class="col-4">
+                    <div class="custom-card">
+                        <div class="card-body">
+                        <h5 class="card-title">ENISA</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">(Agencia Europea de Seguridad en las Redes y la Información):</h6>
+                        <p class="card-text">La ENISA es una agencia de la Unión Europea responsable de la promoción de la seguridad de las redes y de la información en Europa. Su página web ofrece una amplia gama de recursos sobre ciberseguridad, incluyendo noticias, informes, herramientas y formación. </p>
+                        <a target="_blank" href="https://www.enisa.europa.eu/" class="btn btn-secondary">ENISA</a>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="col-4">
+                    <div class="custom-card">
+                        <div class="card-body">
+                        <h5 class="card-title">INCIBE</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">(Instituto Nacional de Ciberseguridad de España)</h6>
+                        <p class="card-text">El INCIBE es un organismo público español que se encarga de la protección de las redes y sistemas de información en España. Su página web ofrece información sobre ciberseguridad, incluyendo noticias, guías, herramientas y formación.</p>
+                        <a target="_blank" href="https://www.incibe.es/" class="btn btn-secondary">INCIBE</a>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="col-4">
+                    <div class="custom-card">
+                        <div class="card-body">
+                        <h5 class="card-title">SANS</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">(Systems Administration, Networking and Security Institute)</h6>
+                        <p class="card-text">El SANS Institute es una organización sin ánimo de lucro que ofrece formación y certificaciones en ciberseguridad. Su página web ofrece una amplia gama de recursos sobre ciberseguridad, incluyendo noticias, artículos, cursos y formación.</p>
+                        <a target="_blank" href="https://www.sans.org/" class="btn btn-secondary">SANS</a>
+                        </div>
+                    </div>
+                    </div>
+                </div><br><br>
+        </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>Dirección:</strong><br>Av. Cardenal #256<br>Tuxtla Gutierrez, Chiapas</p>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <p><strong>Contacto:</strong><br>Correo electrónico: andresgrlp@gmail.com<br>Teléfono: (+52) 919-173-41-48</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
